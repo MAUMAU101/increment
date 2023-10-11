@@ -18,3 +18,11 @@ class MayApp extends StatelessWidget {
     );
   }
 }
+
+/*
+git status
+git add
+git add .
+git commit -m "Update to reset button and click's"
+git push origin master
+*/
