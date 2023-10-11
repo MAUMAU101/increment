@@ -39,9 +39,8 @@ class _CounterState extends State<Counter> {
             FloatingActionButton(
                 onPressed: () {
                   setState(() {
-                    clickCounter -= 1; //Icons.exposure_minus_1
-                    if (clickCounter <= 0) {
-                      clickCounter = 0;
+                    if (clickCounter > 0) {
+                      clickCounter --;
                     }
                   });
                 },
