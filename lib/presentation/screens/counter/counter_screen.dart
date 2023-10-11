@@ -12,6 +12,8 @@ class _CounterState extends State<Counter> {
 
   @override
   Widget build(BuildContext context) {
+    String counterText = clickCounter == 1 || clickCounter == 0 ? 'click' : 'clicks';
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -21,7 +23,10 @@ class _CounterState extends State<Counter> {
               '$clickCounter',
               style: const TextStyle(fontSize: 160, fontWeight: FontWeight.w100),
             ),
-            const Text('Clicks', style: TextStyle(fontSize: 60)),
+            Text(
+              counterText,
+              style: const TextStyle(fontSize: 60),
+            ),
           ],
         ),
       ),
