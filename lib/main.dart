@@ -11,7 +11,7 @@ class MayApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.cyan),
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: const Color.fromARGB(255, 0, 212, 14)),
       debugShowCheckedModeBanner: false,
       home: const Counter(),
     );
